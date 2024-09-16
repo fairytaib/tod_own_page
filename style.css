@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
 /* Positioning of Items */
 *{
     padding: 0;
@@ -19,6 +17,9 @@ body{
 }
 .navbarLeft{
     text-align: center;
+}
+.navbarRight a{
+    padding: 0 20px;
 }
 .heroDiv{
     display: flex;
@@ -72,13 +73,33 @@ body{
     align-items: center;
     
 }
-.mainMiddle p, .author{
-    max-width: 50%;
+.mainUpper p{
+    text-align: center;
 }
-.mainMiddle .author{
-    align-self: center;
-}
+.mainMiddleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
 
+}
+.mainMiddleContainer .author{
+    align-self: flex-end;
+}
+.mainEnd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.mainEnd .mainEndBlueBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 70%;
+}
 /*Design of Content */
 *{
     font-family: "Roboto", sans-serif;
@@ -115,6 +136,7 @@ body{
     /* box-shadow: none; */
     color: #E5E7EB;
     font-size: 18px;
+    border: none;
 }
 .mainUpper .boxContent{
     border: solid 3px #3882F6;
@@ -127,10 +149,11 @@ body{
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    padding: 30px;
     
 }
-.mainUpper p{
-    text-align: center;
+.mainMiddle{
+    background-color: #E5E7EB;
 }
 .mainMiddle p{
     font-size: 36px;
@@ -141,10 +164,36 @@ body{
     
     
 }
-
-
-
-
-.mainMiddle{
-    background-color: #E5E7EB;
+.mainMiddle .author{
+    font-weight: 600;
+    font-style: normal;
+}
+.mainEnd .mainEndBlueBox{
+    background-color: #3882F6;
+    border-radius: 7px;
+    padding: 20px;
+}
+.mainEnd h4, .mainEnd p{
+    color: #F9FAF8;
+}
+.mainEnd h4{
+    font-size: 22px;
+}
+.mainEnd p{
+    font-weight: 300;
+}
+.mainEnd button{
+    background-color: #3882F6;
+    padding: 7px 30px;
+    border-radius: 10px;
+    /* box-shadow: none; */
+    color: #E5E7EB;
+    font-size: 18px;
+    border: 2px solid #F9FAF8;
+}
+footer{
+    text-align: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 30px;
 }
